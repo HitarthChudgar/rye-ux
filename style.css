@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--black);
+}
+
+.nav-bar{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+:root {
+    --black: #000000;
+    --oxford-blue: #14213d;
+    --orange-web: #fca311;
+    --platinum: #e5e5e5;
+    --white: #ffffff;
+}
+
+.nav-wrapper {
+    display: flex;
+    padding-top: 10px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    list-style-type: none;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.nav-brand>a {
+    text-decoration: none;
+    color: var(--platinum);
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.nav-links>li {
+    margin-right: 40px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.nav-links>li>a {
+    text-decoration: none;
+    color: var(--platinum);
+}
+
+.nav-brand > a{
+    animation: gradanimate 15s infinite alternate;
+    background-color: #FBDA61;
+    background-image: -webkit-linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background-image: -moz-linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background-image: -o-linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    -webkit-background-clip: text;
+    background-size: 400%;
+    background-position: left;
+    color: transparent;
+    font-size: 1.75em;
+}
+
+@keyframes gradanimate {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
