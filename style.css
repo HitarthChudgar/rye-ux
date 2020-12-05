@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
     margin: 0;
@@ -7,13 +8,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--black);
-}
-
-.nav-bar{
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 :root {
@@ -22,6 +18,11 @@ body {
     --orange-web: #fca311;
     --platinum: #e5e5e5;
     --white: #ffffff;
+}
+
+.nav-bar{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .nav-wrapper {
@@ -47,7 +48,7 @@ body {
     align-items: center;
     margin-left: 40px;
     margin-top: 5px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav-brand>a {
@@ -90,4 +91,44 @@ body {
     100% {
         background-position: right;
     }
+}
+
+.nav-links>li>a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--orange-web);
+    text-decoration-thickness: 2px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    list-style-type: none;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+
+.fa-github,.fa-instagram,.fa-discord {
+    color: var(--white);
+    padding-right: 35px;
+}
+
+.social-links:hover > li{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.social-links:hover>li:hover {
+    opacity: 1.0;
+    cursor: pointer;
 }
