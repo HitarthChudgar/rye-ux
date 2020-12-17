@@ -9,16 +9,21 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--black);
+    background-color: var(--bgdark);
 }
 
+/*setting base color scheme*/
+
 :root {
+    --bgdark: #111213;
     --black: #000000;
     --oxford-blue: #14213d;
     --orange-web: #fca311;
     --platinum: #e5e5e5;
     --white: #ffffff;
 }
+
+/*nav stylings and states*/
 
 .nav-bar{
     padding-left: 16px;
@@ -69,6 +74,8 @@ body {
     color: var(--platinum);
 }
 
+/*nav logo animation*/
+
 .nav-brand > a{
     animation: gradanimate 15s infinite alternate;
     background-color: #FBDA61;
@@ -94,10 +101,11 @@ body {
 }
 
 .nav-links>li>a:hover{
-    text-decoration: underline;
-    text-decoration-color: var(--orange-web);
-    text-decoration-thickness: 2px;
+    opacity: 0.5;
+    cursor: pointer;
 }
+
+/*footer styling and states*/
 
 footer {
     position: absolute;
