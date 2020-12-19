@@ -201,26 +201,26 @@ footer {
     opacity: 75%;
 }
 
-/*about-us page styling*/
+/*general page styling*/
 
-.about-us {
+.about-us,
+.apply {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding-top: 10%;
-    margin-bottom: 12.5%;
-
+    padding-top: 7%;
+    margin-bottom: 2.5%;
 }
 
-.about-us>div.img-right.lrgrid>img{
+img {
     border-radius: 10px;
     width: 666.5px;
     height: 500px;
 }
 
-.about-us>div.text-left>h1{
+.about-us>div.text-left>h1 {
     font-weight: 600;
     color: var(--white);
     font-size: 2.1em;
@@ -231,4 +231,46 @@ footer {
     font-weight: 300;
     color: var(--white);
     opacity: 50%;
+}
+
+.apply>div.img-right>h1 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2.1em;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.apply>div.img-right>p {
+    padding-top: 5.5%;
+    font-weight: 300;
+    color: var(--white);
+    opacity: 50%;
+    text-align: left;
+    margin-left: 5%
+}
+
+.apply-button {
+    display: flex;
+    justify-content: left;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.apply-button>a {
+    color: var(--white);
+    background-color: var(--linkcommon);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform .2s ease-out;
+}
+
+.apply-button>a:hover {
+    transform: translateY(-5px);
 }
