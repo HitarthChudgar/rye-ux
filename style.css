@@ -114,7 +114,7 @@ footer {
     align-items: center;
     flex: 0 0 50px;
     /*or just height:50px;*/
-    margin-top: auto;
+    margin: 0 auto;
 }
 
 .social-links {
@@ -123,18 +123,18 @@ footer {
     align-items: center;
     flex: 1;
     list-style-type: none;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin: 0 auto;
     padding-bottom: 10px;
 }
 
 .fa-github,
-.fa-instagram,
-.fa-discord {
+.fa-instagram, .fa-discord{
     color: var(--white);
-    padding-right: 32px;
     margin-top: 40%;
+    padding-right: 32px;
+    padding-left: 32px;
 }
+
 
 .social-links:hover>li {
     opacity: 0.5;
