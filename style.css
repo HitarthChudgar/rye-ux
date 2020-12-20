@@ -391,6 +391,31 @@ img {
         min-height: 100vh;
     }
 
+    .hero-landing {
+        width: 90%;
+        padding-top: 60px;
+    }
+
+    body>main>div.about-us.aos-init.aos-animate{
+        padding-top: 100px;
+    }
+
+    body>main>div.about-us.aos-init.aos-animate>div.text-left.lrgrid>h1 {
+        font-size: 1.85em;
+    }
+
+    body>main>div.about-us.aos-init.aos-animate>div.text-left.lrgrid>p {
+        font-size: 1.15em;
+    }
+
+    div.apply>div.img-right.lrgrid>h1 {
+        font-size: 1.85em;
+    }
+
+    div.apply>div.img-right.lrgrid>p {
+        font-size: 1.15em;
+    }
+
     .about-us,
     .apply {
         width: 90%;
@@ -408,6 +433,10 @@ img {
 
     .apply>div.img-right>h1 {
         margin-left: 0%;
+    }
+
+    .apply-button>a {
+        margin-left: -5%;
     }
 }
 
@@ -513,7 +542,7 @@ img {
         font-size: 0.85em;
     }
 
-    body>footer>div{
+    body>footer>div {
         padding-top: 20px;
     }
 }
