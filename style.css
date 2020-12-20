@@ -401,8 +401,119 @@ img {
         padding-top: 7%;
         margin-bottom: 2.5%;
     }
+
+    .apply>div.img-right>p {
+        margin-left: 0%;
+    }
+
+    .apply>div.img-right>h1 {
+        margin-left: 0%;
+    }
 }
 
 /*mobile compatible*/
 
+@media screen and (max-width: 425px) {
+    .hero-landing>.hero-title>h1 {
+        font-size: 1.25em;
+    }
 
+    body>main>div.hero-landing>div.hero-title>h3 {
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 0.85em;
+    }
+
+    .nav-brand {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .apply>div.img-right>p {
+        margin-left: 0%;
+    }
+
+    .apply>div.img-right>h1 {
+        margin-left: 0%;
+    }
+
+    .hero-landing {
+        width: 100%;
+    }
+
+    #\#navbar>div>div.nav-brand {
+        margin: 0;
+        padding-top: 50px;
+        float: none;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.95em;
+    }
+
+    .hero-buttons>a {
+        color: var(--white);
+        background-color: var(--linkcommon);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 8px;
+        font-size: 12px;
+        transition: opacity .2s ease-in;
+    }
+
+    .apply-button>a {
+        color: var(--white);
+        background-color: var(--linkcommon);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 8px;
+        font-size: 12px;
+        transition: opacity .2s ease-in;
+        margin-left: -5%;
+    }
+
+    .hero-landing {
+        padding-top: 0;
+    }
+
+    body>main>div.about-us.aos-init.aos-animate>div.text-left.lrgrid>h1 {
+        font-size: 1.25em;
+    }
+
+    body>main>div.about-us.aos-init.aos-animate>div.text-left.lrgrid>p {
+        font-size: 0.85em;
+    }
+
+    .about-us {
+        padding-top: 60px;
+    }
+
+    div.apply>div.img-right.lrgrid>h1 {
+        font-size: 1.25em;
+    }
+
+    div.apply>div.img-right.lrgrid>p {
+        font-size: 0.85em;
+    }
+
+    body>footer>div{
+        padding-top: 20px;
+    }
+}
