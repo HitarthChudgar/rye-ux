@@ -48,8 +48,6 @@ body {
     align-items: center;
     flex: 1;
     list-style-type: none;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 .nav-brand {
@@ -134,7 +132,8 @@ footer {
 .fa-instagram,
 .fa-discord {
     color: var(--white);
-    padding-right: 35px;
+    padding-right: 32px;
+    margin-top: 40%;
 }
 
 .social-links:hover>li {
@@ -273,4 +272,108 @@ img {
 
 .apply-button>a:hover {
     transform: translateY(-5px);
+}
+
+@media screen and (min-width: 2560px) {
+    .hero-title>h1 {
+        width: 85%;
+        margin: auto;
+        font-weight: 600;
+        color: var(--white);
+        font-size: 4em;
+    }
+
+    .hero-title>h3 {
+        padding-top: 2.5%;
+        font-weight: 300;
+        color: var(--white);
+        opacity: 50%;
+        font-size: 2.1em;
+    }
+
+    .hero-buttons>a {
+        color: var(--white);
+        background-color: var(--linkcommon);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 64px;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 16px;
+        font-size: 32px;
+        transition: opacity .2s ease-in;
+    }
+
+    .about-us>div.text-left>h1 {
+        font-size: 4em;
+        margin-right: 10%;
+    }
+
+    .about-us>div.text-left>p {
+        padding-top: 5.5%;
+        font-size: 1.8em;
+        font-weight: 300;
+        color: var(--white);
+        opacity: 50%;
+        margin-right: 10%;
+    }
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .apply>div.img-right>h1 {
+        font-weight: 600;
+        color: var(--white);
+        font-size: 4em;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .apply>div.img-right>p {
+        padding-top: 5.5%;
+        font-size: 1.8em;
+        font-weight: 300;
+        color: var(--white);
+        opacity: 50%;
+        text-align: left;
+        margin-left: 5%
+    }
+
+    .apply-button>a {
+        color: var(--white);
+        background-color: var(--linkcommon);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 64px;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 16px;
+        font-size: 32px;
+        transition: transform .2s ease-out;
+    }
+
+    .fa-github,
+    .fa-instagram,
+    .fa-discord {
+        color: var(--white);
+        padding-right: 64px;
+    }
+
+    .fa-2x{
+        font-size: 4em !important;
+    }
+
+    .nav-brand>a {
+        font-size: 2.75em;
+    }
+
+    .nav-links>li {
+        font-size: 1.5em;
+    }
+
 }
