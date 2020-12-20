@@ -274,6 +274,8 @@ img {
     transform: translateY(-5px);
 }
 
+/*4K compatible*/
+
 @media screen and (min-width: 2560px) {
     .hero-title>h1 {
         width: 85%;
@@ -364,7 +366,7 @@ img {
         padding-right: 64px;
     }
 
-    .fa-2x{
+    .fa-2x {
         font-size: 4em !important;
     }
 
@@ -377,3 +379,30 @@ img {
     }
 
 }
+
+/*tablet compatible*/
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bgdark);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .about-us,
+    .apply {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding-top: 7%;
+        margin-bottom: 2.5%;
+    }
+}
+
+/*mobile compatible*/
+
+
