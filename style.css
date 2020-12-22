@@ -271,7 +271,7 @@ img {
 }
 
 .apply-button>a:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 /*4K compatible*/
