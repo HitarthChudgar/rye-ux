@@ -148,18 +148,35 @@ footer {
 
 /*hero styling*/
 
-.hero-landing {
-    width: 65%;
+.hero-landing, .team-page {
+    width: 70%;
     margin: auto;
     padding-top: 5%;
     text-align: start;
 }
 
-.hero-landing>.hero-title {
+.hero-landing > .hero-title {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-page >
+.team-title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-title>h1 {
+    width: 85%;
+    margin: auto;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2.1em;
+}
+
+.team-title>h1 {
     width: 85%;
     margin: auto;
     font-weight: 600;
@@ -172,6 +189,28 @@ footer {
     font-weight: 300;
     color: var(--white);
     opacity: 50%;
+}
+
+.team-title>h3 {
+    padding-top: 2.5%;
+    font-weight: 300;
+    color: var(--white);
+    opacity: 50%;
+}
+
+.team-pictures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member img{
+    border-radius: 2.5%;
+    width: 225px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*hero button styling*/
@@ -204,7 +243,7 @@ footer {
 
 .about-us,
 .apply {
-    width: 90%;
+    width: 93%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
