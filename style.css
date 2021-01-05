@@ -212,13 +212,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 120px;
     grid-row-gap: 5px;
 }
 
 .member img{
     border-radius: 0.50rem;
-    width: 80%;
+    width: 95%;
     height: auto;
     margin-left: 10px;
     margin-right: 10px;
@@ -344,6 +344,10 @@ img {
 /*4K compatible*/
 
 @media screen and (min-width: 2560px) {
+    .nav-wrapper{
+        padding-top: 20px;
+    }
+
     .hero-title>h1 {
         width: 85%;
         margin: auto;
@@ -445,6 +449,21 @@ img {
         font-size: 2.2em;
     }
 
+    .team-title>h1 {
+        font-size: 4em;
+    }    
+
+    .team-title>h3{
+        font-size: 2.25em;
+    }
+
+    .member h5{
+        font-size: 3em;
+    }
+
+    .member h6{
+        font-size: 2.25em;
+    }
 }
 
 /*tablet compatible*/
@@ -492,6 +511,18 @@ img {
         grid-gap: 20px;
         padding-top: 7%;
         margin-bottom: 2.5%;
+    }
+
+    .team-title>h1 {
+        font-size: 1.85em;
+    }
+
+    .team-title>h3 {
+        font-size: 0.95em;
+    }
+
+    .team-pictures {
+        grid-column-gap: 60px;
     }
 
     .apply>div.img-right>p {
@@ -611,5 +642,20 @@ img {
 
     body>footer>div {
         padding-top: 20px;
+    }
+
+    .team-pictures {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+    }
+
+    .team-title>h1 {
+        padding-top: 20px;
+        font-size: 1.25em;
+    }
+
+    .team-title>h3 {
+        font-size: 0.85em;
     }
 }
