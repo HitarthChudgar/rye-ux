@@ -214,6 +214,7 @@ footer {
     grid-template-rows: 1fr;
     grid-column-gap: 120px;
     grid-row-gap: 5px;
+    margin: 0px 0px 40px 0px;
 }
 
 .member img{
