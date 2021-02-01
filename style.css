@@ -219,10 +219,11 @@ footer {
 
 .member img{
     border-radius: 0.50rem;
-    width: 95%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     margin-left: 10px;
     margin-right: 10px;
+    object-fit: cover;
     padding: 0 !important;
 }
 
